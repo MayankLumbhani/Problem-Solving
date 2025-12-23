@@ -1,9 +1,21 @@
-function strLen(strArr){
+function strLen(arr){
     
+    let i = 0;
     let lenArr = [];
     
-    for(let i = 0; i < strArr.length; i++){
-        lenArr.push(strArr[i].length);
+    while(arr[i] != undefined){
+        i++;
+    }
+    
+    let k;
+    
+    for(let j = 0; j < i; j++){
+        str = arr[j];
+        k = 0;
+        while(str[k] != undefined){
+            k++;
+        }
+        lenArr.push(k);
     }
     
     console.log(lenArr);

@@ -1,3 +1,6 @@
+// Method - 1
+
+
 function array(arr){
     
     let sum = 0;
@@ -19,3 +22,4 @@ function array(arr){
 array([1, 2, 3, 4, 5]);
 array([10, 10, 10]);
 array([5, 15]);
+

@@ -1,3 +1,6 @@
+// Method - 1
+
+
 function array(arr){
     let zeros = 0;
     let ones = 0;
@@ -30,3 +33,25 @@ array([0, 1, 0, 5, 1]);
 array([0, 1, 0, 1, 1])
 array([1, 1, 1]);
 array([0, 0]);
+
+
+// Method - 2
+
+
+function array2(arr){
+
+    let zeros = 0;
+    let ones = 0;
+
+    arr.forEach((value) => {
+        value == 0 ? zeros++ : ones++;
+    });
+
+    console.log("Zeros :",zeros);
+    console.log("Ones :",ones);
+}
+
+array2([0, 1, 0, 1]);
+array2([0, 1, 0, 1, 1]);
+array2([1, 1, 1]);
+array2([0, 0]);
